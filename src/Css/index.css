@@ -1,0 +1,426 @@
+h1 {
+  font-size: 3rem; /* Adjust size of the text */
+  font-weight: bold; /* Make the text bold */
+color: #45a049; /* Green color, suitable for an organic brand */
+  
+ text-transform: uppercase; /* Make text uppercase */
+  letter-spacing: 2px; 
+}
+/* Container for the product list */
+.product-list {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Title of the product list */
+.product-list h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Flex grid container for the products */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap; /* Ensures items wrap onto new lines */
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Center-align items */
+}
+
+/* Individual product item */
+.product-item {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.product-item:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Product image */
+.product-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Product name and details */
+.product-item h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-item p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.product-item .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  margin: 10px 0;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center; /* Stack items vertically */
+  }
+
+  .product-item {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+
+
+
+
+
+  /* Style for the navigation links */
+nav {
+    padding: 20px;
+  }
+  
+  
+  
+ 
+  .nav-links a {
+    text-decoration: none;  /* Remove the underline from links */
+    color: #333;            /* Set text color */
+    font-size: 18px;        /* Set font size */
+    padding: 8px 16px;      /* Padding around the link */
+    background-color: #f4f4f4;  /* Light background color */
+    border-radius: 5px;     /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+  }
+  
+  .nav-links a:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: white;               /* Change text color on hover */
+  }
+  /* Add this to your App.css or relevant stylesheet */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;  /* Centers the text in the container */
+    background-color: #f4f4f4;
+  }
+  
+ h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+     
+    }
+    
+.hero-image, .about-image, .contact-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: block;
+  }
+  
+
+ 
+/* Add to Cart Button */
+.add-to-cart-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: #45a049;
+}
+
+/* Cart Summary */
+.cart-summary {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+.cart-summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-summary li {
+  margin-bottom: 10px;
+}
+
+
+
+/* General Profile Container Styles */
+.profile-container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Header Styles */
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4CAF50;
+}
+
+.profile-info {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.profile-info p {
+  color: #777;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.edit-buttons {
+  margin-top: 10px;
+}
+
+.edit-buttons button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.edit-buttons button:hover {
+  background-color: #45a049;
+}
+
+/* Profile Details Section */
+.profile-details {
+  margin-top: 20px;
+}
+
+.about-me-section,
+.contact-section,
+.social-links-section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* About Me Section */
+textarea,
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Contact Section */
+.contact-item {
+  margin-bottom: 10px;
+}
+
+.contact-item label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Social Links Section */
+.social-link-item a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.social-link-item a:hover {
+  text-decoration: underline;
+}
+
+/* File Upload Section */
+input[type="file"] {
+  display: none;
+}
+
+label[for="fileInput"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+label[for="fileInput"]:hover {
+  background-color: #45a049;
+}
+
+
+/* General container */
+.contact-us-container {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-header h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Contact Information */
+.contact-info {
+  text-align: center;
+  padding: 20px;
+  background-color: #885353;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact-info a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Contact Form */
+.contact-form {
+  padding: 20px;
+  background-color: #fff;
+  max-width: 800px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact-form h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-form p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
