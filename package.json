@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "https://github.com/Pooja-287/FullStack-Ecommerce-.git",
+  "homepage": "https://github.com/Pooja-287/Ecommerce-BackEnd.git",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
